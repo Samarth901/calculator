@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+:root {
+  --rgb: rgb(16, 17, 17);
+  --rgb1: rgb(254, 255, 255);
+  --rgb2: rgb(145, 126, 126);
+  --rgb3: rgba(75, 69, 69, 0.137);
+  --rgb4: rgb(60, 85, 90);
+}
+.sec {
+  background-color: var(--rgb);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display-container {
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--rgb1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.display {
+  background-color: var(--rgb2);
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 30px;
+  position: relative;
+}
+.display1 {
+  opacity: 0.4;
+  font-size: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.temp {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  font-size: 20px;
+  opacity: 0.4;
+}
+.buttons-container {
+  color: rgb(32, 27, 27);
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+.button {
+  border: 0.5px solid var(--rgb3);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--rgb4);
+}
+.btn-zero {
+  grid-column: 1/3;
+}
